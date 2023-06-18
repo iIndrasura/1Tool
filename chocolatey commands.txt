@@ -1,0 +1,36 @@
+#### indrasura ####
+#### Chocolatey Package Manager ####
+
+https://community.chocolatey.org/
+
+- Install Chocolatey Package Manager
+command line
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+
+note: close the power shell after installing
+
+- Package Search 
+https://community.chocolatey.org/packages
+
+- Common Commands (Install, Upgrade, Uninstall)
+choco install {package_name}
+choco upgrade {package_name}
+choco uninstall {package_name}
+
+ex: choco install googlechrome
+
+- Multi Package Installer
+choco install googlechrome vscode putty 7zip
+
+- Update all packages at once
+choco upgrade all -y
+
+#### Update Button #####
+Update button will check all the software installed via chocolatey and update them to latest version in just one click.
+
+#########################################################
+Installing your graphics drivers via SDIO is not recommended as they can be heavily debloated.
+#########################################################
+Visual C++ Redistributables AIO
+https://github.com/abbodi1406/vcredist
+#########################################################
