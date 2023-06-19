@@ -20,14 +20,14 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 Note: After the installation is complete, you should close the PowerShell window.
 
-Install Directory of chocolatey: C:\ProgramData\chocolatey
+**Install Directory of chocolatey:** `C:\ProgramData\chocolatey`
 
-Package library: C:\ProgramData\chocolatey\lib
+**Package library:** `C:\ProgramData\chocolatey\lib`
 
 ## Usage
 
-**Install Button:** The Install button in the 1Tool will will install all the selected packages and any required dependencies.
-**Update Button:** The Update button in the 1Tool will check all the software installed via Chocolatey and update them to the latest versions with just one click.
+**Install Button: The Install button in the 1Tool will will install all the selected packages and any required dependencies.**
+**Update Button: The Update button in the 1Tool will check all the software installed via Chocolatey and update them to the latest versions with just one click.**
 
 The 1Tool provides several useful commands and features for managing software packages using Chocolatey. Here are some common commands and examples:
 - Package Search: You can search for available packages on the Chocolatey community website at https://community.chocolatey.org/packages.
@@ -58,9 +58,7 @@ The 1Tool provides several useful commands and features for managing software pa
 If a package is not installing or you have uninstalled the software using a different program (such as Revo Uninstaller or Control Panel), you can follow these steps to resolve the issue:
 
 Check the library directory of Chocolatey (C:\ProgramData\chocolatey\lib) to see if the package is still present.
-
 Open a PowerShell window with administrative privileges and uninstall the package using Chocolatey again "choco uninstall {package_name}"
-
 This will remove the package from the Chocolatey library, allowing you to reinstall it.
 
 ## Contributing
