@@ -4,16 +4,15 @@
 
 Chocolatey is a package manager for Windows that allows you to easily install, upgrade, and uninstall software packages from the command line. It provides a centralized repository of packages, making it convenient to manage and maintain your software installations.
 
-To use the 1Tool, you need to have Chocolatey Package Manager installed. If you're using the 1Tool, it will automatically install Chocolatey for you, so there's no need to install it manually.
-
 ![guiImage](guiImage.PNG)
 
 ## Installation
 
+**NOTE: To use the 1Tool, you need to have Chocolatey Package Manager installed. If you're using the 1Tool, it will automatically install Chocolatey for you, so there's no need to install it manually.**
+
 To install Chocolatey Package Manager manually, follow these steps:
 
 Open a command prompt or PowerShell window with administrative privileges.
-
 Run the following command to set the execution policy:
 ```bash
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
