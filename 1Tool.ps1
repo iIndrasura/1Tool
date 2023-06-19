@@ -11,7 +11,6 @@ $ErrorActionPreference = 'SilentlyContinue'
 [int] $separate = 30
 [int] $global:lastPos = 50
 [bool]$global:install = $false
-[bool]$global:install = $false
 
 function generate_checkbox {
     param(
@@ -42,7 +41,7 @@ function generate_checkbox {
 
 # Set the size of your form
 $Form = New-Object System.Windows.Forms.Form
-$Form.Text = "Install Software | Indrasura#0175" # Titlebar
+$Form.Text = "Install Software | indrasura" # Titlebar
 $Form.ShowIcon = $false
 $Form.MaximizeBox = $false
 $Form.MinimizeBox = $false
@@ -58,53 +57,130 @@ $Label.Size = New-Object System.Drawing.Size(255, 15)
 $Label.Text = "Download and install software using Chocolatey:"
 $Form.Controls.Add($Label)
 
+# https://community.chocolatey.org/packages/sdio
 $Form.Controls.Add((generate_checkbox "Snappy Driver Installer Origin" "sdio"))
+
+# https://community.chocolatey.org/packages/brave
 $Form.Controls.Add((generate_checkbox "Brave Browser" "brave"))
+
+# https://community.chocolatey.org/packages/GoogleChrome
 $Form.Controls.Add((generate_checkbox "Google Chrome" "googlechrome"))
+
+# https://community.chocolatey.org/packages/Firefox
 $Form.Controls.Add((generate_checkbox "Mozilla Firefox" "firefox"))
 
+# https://community.chocolatey.org/packages/adblockpluschrome
 $Form.Controls.Add((generate_checkbox "Adblock Plus Extention for Chrome/ Brave" "adblockpluschrome"))
+
+# https://community.chocolatey.org/packages/ublockorigin-chrome
 $Form.Controls.Add((generate_checkbox "uBlock Origin Extention for Chrome/ Brave" "ublockorigin-chrome"))
+
+# https://community.chocolatey.org/packages/sponsorblock-for-youtube-chrome
 $Form.Controls.Add((generate_checkbox "SponsorBlock Extention for Chrome/ Brave" "sponsorblock-for-youtube-chrome"))
 
+# https://community.chocolatey.org/packages/qbittorrent
 $Form.Controls.Add((generate_checkbox "QBittorrent" "qbittorrent"))
+
+# https://community.chocolatey.org/packages/discord
 $Form.Controls.Add((generate_checkbox "Discord" "discord"))
+
+# https://community.chocolatey.org/packages/telegram.install
 $Form.Controls.Add((generate_checkbox "Telegram (Install)" "telegram.install"))
 
+# https://community.chocolatey.org/packages/steam
 $Form.Controls.Add((generate_checkbox "Steam" "steam"))
+
+# https://community.chocolatey.org/packages/ea-app
 $Form.Controls.Add((generate_checkbox "EA App" "ea-app"))
+
+# https://community.chocolatey.org/packages/epicgameslauncher
 $Form.Controls.Add((generate_checkbox "Epic Games Launcher" "epicgameslauncher"))
+
+# https://community.chocolatey.org/packages/bluestacks
 $Form.Controls.Add((generate_checkbox "BlueStacks" "bluestacks"))
 
+# https://community.chocolatey.org/packages/razer-synapse-3
 $Form.Controls.Add((generate_checkbox "Razer Synapse 3" "razer-synapse-3"))
+
+# https://community.chocolatey.org/packages/lghub
 $Form.Controls.Add((generate_checkbox "Logitech G HUB" "lghub"))
 
+# https://community.chocolatey.org/packages/vlc
 $Form.Controls.Add((generate_checkbox "VLC" "vlc"))
+
+# https://community.chocolatey.org/packages/7zip
 $Form.Controls.Add((generate_checkbox "7-Zip" "7zip"))
+
+# https://community.chocolatey.org/packages/spotify
 $Form.Controls.Add((generate_checkbox "Spotify" "spotify"))
+
+# https://community.chocolatey.org/packages/obs-studio
 $Form.Controls.Add((generate_checkbox "OBS Studio" "obs-studio"))
 
+# https://community.chocolatey.org/packages/libreoffice-fresh
 $Form.Controls.Add((generate_checkbox "LibreOffice" "libreoffice-fresh"))
+
+# https://community.chocolatey.org/packages/okular
 $Form.Controls.Add((generate_checkbox "Okular" "okular"))
+
+# https://community.chocolatey.org/packages/notepadplusplus
 $Form.Controls.Add((generate_checkbox "Notepad++" "notepadplusplus"))
+
+# https://community.chocolatey.org/packages/kate
 $Form.Controls.Add((generate_checkbox "Kate" "kate"))
+
+# https://community.chocolatey.org/packages/visualstudio2022enterprise
+$Form.Controls.Add((generate_checkbox "Visual Studio 2022 Enterprise" "visualstudio2022enterprise"))
+
+# https://community.chocolatey.org/packages/vscode
 $Form.Controls.Add((generate_checkbox "Visual Studio Code" "vscode"))
+
+# https://community.chocolatey.org/packages/anydesk.install
+$Form.Controls.Add((generate_checkbox "AnyDesk MSI (Install)" "anydesk.install"))
+
+# https://community.chocolatey.org/packages/GitHub
 $Form.Controls.Add((generate_checkbox "GitHub Desktop" "github"))
+
+# https://community.chocolatey.org/packages/vmwareworkstation
 $Form.Controls.Add((generate_checkbox "VMware Workstation Pro" "vmwareworkstation"))
+
+# https://community.chocolatey.org/packages/virtualbox
 $Form.Controls.Add((generate_checkbox "VirtualBox" "virtualbox"))
 
+# https://community.chocolatey.org/packages/msiafterburner
 $Form.Controls.Add((generate_checkbox "MSI Afterburner" "msiafterburner"))
-$Form.Controls.Add((generate_checkbox "CPU-Z" "cpu-z"))
-$Form.Controls.Add((generate_checkbox "GPU-Z" "gpu-z"))
+
+# https://community.chocolatey.org/packages/bulk-crap-uninstaller
 $Form.Controls.Add((generate_checkbox "Bulk Crap Uninstaller" "bulk-crap-uninstaller"))
+
+# https://community.chocolatey.org/packages/cpu-z
+$Form.Controls.Add((generate_checkbox "CPU-Z" "cpu-z"))
+
+# https://community.chocolatey.org/packages/gpu-z
+$Form.Controls.Add((generate_checkbox "GPU-Z" "gpu-z"))
+
+# https://community.chocolatey.org/packages/hwinfo
 $Form.Controls.Add((generate_checkbox "HWiNFO" "hwinfo"))
+
+# https://community.chocolatey.org/packages/directx
 $Form.Controls.Add((generate_checkbox "DirectX" "directx"))
 
+# https://community.chocolatey.org/packages/vcredist140
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2015-2022" "vcredist140"))
+
+# https://community.chocolatey.org/packages/vcredist2013
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2013" "vcredist2013"))
+
+# https://community.chocolatey.org/packages/vcredist2012
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2012" "vcredist2012"))
+
+# https://community.chocolatey.org/packages/vcredist2010
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2010" "vcredist2010"))
+
+# https://community.chocolatey.org/packages/vcredist2010
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2010" "vcredist2010"))
+
+# https://community.chocolatey.org/packages/vcredist2008
 $Form.Controls.Add((generate_checkbox "Visual C++ Redistributable 2008" "vcredist2008"))
 
 if ($global:column -ne 0) {
@@ -172,7 +248,6 @@ $Form.Controls.Add($UpdateButton)
 
 # Action for the Update Button
 $UpdateAction = {
-    # Execute the PowerShell command
     Write-Host "$Env:ProgramData\chocolatey\choco.exe upgrade all -y"
     Start-Process -FilePath "$Env:ProgramData\chocolatey\choco.exe" -ArgumentList "upgrade all -y " -Wait
 }
